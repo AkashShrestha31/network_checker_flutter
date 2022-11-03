@@ -9,7 +9,7 @@ Dependency used for this project:
 
 
 code: 
-* page must user NetworkCheckerPage() inside column
+* page must use NetworkCheckerPage() inside column
 ```flutter
  Container(
         height: MediaQuery.of(context).size.height,
