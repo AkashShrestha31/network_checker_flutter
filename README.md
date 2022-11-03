@@ -10,7 +10,7 @@ rxdart: ^0.27.5
 
 code: 
 * page must user NetworkCheckerPage() inside column
-```
+```dart
  Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
