@@ -1,16 +1,30 @@
 # internet_checker
 
-A new Flutter project.
+This is the demo project for continuos internet checker.
 
 ## Getting Started
+Dependency used for this project:
+connectivity: any
+rxdart: ^0.27.5
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+code: 
+* page must user NetworkCheckerPage() inside column
+ Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: Column(
+          children: [
+            const NetworkCheckerPage(),
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: const [
+                  Text("on/off intenet to get result"),
+                ],
+              ),
+            ),
+          ],
+        ),
+      )
